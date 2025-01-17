@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "To-Do List",
+  "description": "Manage your to-do list",
+  "version": "1.0",
+  "permissions": [
+	"storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "host_permissions": [
+    "http://localhost:8080/*"
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
